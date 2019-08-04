@@ -1,5 +1,5 @@
 $(document).ready(function() {
-  let animals = [turtle, skunk, capybara, puppy];
+  let animals = ["turtle", "skunk", "capybara", "puppy"];
 
   // FUNCTION TO MAKE BUTTONS AND ADD TO PAGE
   function populateButtons(arrayToUse, classToAdd, areaToAddTo) {
