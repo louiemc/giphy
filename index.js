@@ -1,5 +1,6 @@
 $(document).ready(function() {
-  let animals = ["turtle", "skunk", "capybara", "puppy"];
+
+  let gifs = ["turtle", "skunk", "capybara", "puppy"];
 
   // FUNCTION TO MAKE BUTTONS AND ADD TO PAGE
   function populateButtons(arrayToUse, classToAdd, areaToAddTo) {
@@ -14,25 +15,27 @@ $(document).ready(function() {
     }
   }
 
-  $(document).on("click", ".gif-button", () => {
+  $(document).on("click", ".gif-button", function() {
     $("#gifs").empty();
     $(".gif-button").removeClass("active");
     $(this).addClass("active");
 
     let type = $(this).attr("data-type");
+    var key = "api_key=K9B7VZVfI3exaWDJPkKk5AdqHzoUjE38";
+    // var queryUrl = "https://api.giphy.com/v1/gifs/search?q=" + newTopic + "&" + key + "&limit=10";
     let queryURL =
       "http://api.giphy.com/v1/gifs/search?q=" +
       type +
-      "&api_key=dc6zaTOxFJmzC&limit=10";
+      "&" + key + "&limit=10";
 
     $.ajax({
       url: queryURL,
       method: "GET"
-    }).then(response => {
+    }).then( function(response) {
       let results = response.data;
 
       for (var i = 0; i < results.length; i++) {
-        let gifDiv = $('<div class="gif-item">');
+        let gifDiv = $("<div class=\"gif-item\">");
 
         let rating = results[i].rating;
 
@@ -51,11 +54,13 @@ $(document).ready(function() {
 
         gifDiv.append(p);
         gifDiv.append(gifImage);
+
+        $("#gifs").append(gifDiv);
       }
     });
   });
 
-  $(document).on("click", ".gif-image", () => {
+  $(document).on("click", ".gif-image", function() {
     let state = $(this).attr("data-state");
 
     if (state === "still") {
