@@ -14,3 +14,7 @@ The Giphy API (application programming interface) will be used to make a dynamic
 To do this: 
 - Giphy API must be called
 - Use Javascript and jQuery to change the HTML of the site
+
+
+## Initial Look 
+![without additional styles](https://media.giphy.com/media/LPCdwwtcu0VLJ1xJns/giphy.gif)
