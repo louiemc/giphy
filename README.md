@@ -18,3 +18,6 @@ To do this:
 
 ## Initial Look 
 ![without additional styles](https://media.giphy.com/media/LPCdwwtcu0VLJ1xJns/giphy.gif)
+
+## Using Bootstrap and Google Fonts
+![with additional styles](https://media.giphy.com/media/VIQB2XJnfaE1mJOxgA/giphy.gif)

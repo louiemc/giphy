@@ -1,21 +1,51 @@
 body {
-  background: #eee;
+  background: #fff;
 }
+#welcome {
+  border-bottom: 1px solid #23e2ff;
+  width: 100%;
+}
+
+/* 
+font-family: 'Raleway', sans-serif;
+font-family: 'Red Hat Display', sans-serif;
+ */
+
+h3 {
+  margin-top: 20%;
+  line-height: 2;
+  font-family: 'Raleway', sans-serif;
+}
+
+.description {
+  padding: 1em;
+}
+.description p {
+  line-height: 2;
+  font-family: 'Red Hat Display', sans-serif;
+}
+
 
 #gifs {
   width: 100%;
 }
-
+/* 
 #gif-item {
   float: left;
   margin: 10px;
-}
+} */
 
 form {
-  float: right;
-  width: 30%;
-  padding: 20px;
-  background: #ccc;
+  /* float: right; */
+  width: 100%;
+  /* padding: 20px; */
+  background: #fff;
+  min-height: 10em;
+  margin-bottom: 4em;
+  padding-left: 35%;
+  padding-top: 2.5em;
+  padding-bottom: 2.5em;
+  border-bottom: #23e2ff 1px solid;
 }
 
 label {
@@ -25,7 +55,7 @@ label {
 }
 
 input[type="text"] {
-  width: 100%;
+  width: 50%;
   height: 30px;
   margin-bottom: 10px;
   font-size: 18px;
@@ -49,4 +79,32 @@ button:hover, input[type="submit"]:hover {
 
 button.active {
   background: #334e4d;
+}
+
+.row {
+  width: 100%;
+}
+
+#gif-buttons {
+  /* float: left; */
+  display: inline-block;
+  width: 100%;
+}
+
+.button-row {
+  margin-bottom: 3em;
+}
+
+/* #gifs {
+  display: inline;
+  margin: 1em;
+} */
+
+.gif-row {
+  width: 100%;
+}
+
+.gif-item {
+  display: inline-block;
+  margin: .5em;
 }

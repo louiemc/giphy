@@ -26,7 +26,7 @@ $(document).ready(function() {
     let queryURL =
       "http://api.giphy.com/v1/gifs/search?q=" +
       type +
-      "&" + key + "&limit=10";
+      "&" + key + "&limit=20";
 
     $.ajax({
       url: queryURL,
@@ -52,7 +52,7 @@ $(document).ready(function() {
         gifImage.attr("data-state", "still");
         gifImage.addClass("gif-image");
 
-        gifDiv.append(p);
+        // gifDiv.append(p);
         gifDiv.append(gifImage);
 
         $("#gifs").append(gifDiv);
